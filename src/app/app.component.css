@@ -1,0 +1,22 @@
+.conteiner{
+    width: 95%;
+    margin-right: auto;  
+    
+  
+    display: flex;
+}
+
+.tabla{
+    width: 1300px;
+    
+    margin-left: 50px;
+    margin-top: 25px;
+    
+
+}
+
+.detalle{
+    width: 1300px;
+    margin-top: 25px;
+    
+}

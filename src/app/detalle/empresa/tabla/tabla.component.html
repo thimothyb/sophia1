@@ -1,0 +1,64 @@
+
+
+
+<div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+  
+    <h1 class="btn ">Empresas</h1>
+   
+    <button type="button" class="btn btn-secondary ">Agregar Empresa</button>
+  
+  </div>
+  
+         
+  <div class="row h-60 ">
+                  
+
+    
+    <div class="pp animate__animated animate__fadeIn d-flex h-50 ">            
+        <div class="bg-light-soft rounded-4 p-4 mb-4 w-100 h-100">  
+
+          <cdk-virtual-scroll-viewport appendOnly class="example-viewport" style="height: 250px;width: auto;" [itemSize]="30">  
+          
+          <table class="m-2 text-white p-4 mb-4 w-100 h-90">
+            <tr >
+              <th class=" bg-dark ">nombre</th>
+              <th class=" bg-dark ">tema</th>
+              <th class=" bg-dark ">Codigo de la organizacion</th>
+              <th class=" bg-dark ">codigo de membresia</th>
+              <th class=" bg-dark ">curso creado</th>
+              <th class=" bg-dark ">logo</th>
+              <th class=" bg-dark ">status</th>
+            </tr>
+              <tr *cdkVirtualFor="let cursos of curso">
+                <td>{{cursos.name}}</td>
+                <td>{{cursos.theme}}</td>
+                <td>{{cursos.organizationCode}}</td>
+                <td>{{cursos.membershipCode}}</td>
+                <td>{{cursos.createdCourses}}</td>
+                <td>{{cursos.logo}}</td>
+               
+              </tr>
+              
+             
+            </table>
+
+            
+          </cdk-virtual-scroll-viewport>  
+          
+       
+  
+        </div>
+    </div>
+  
+    
+  
+  
+    
+  </div>
+  
+  
+  
+  
+  
+  
+    
